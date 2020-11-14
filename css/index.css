@@ -1,6 +1,21 @@
+body{
+    /*加载背景图*/
+    background-image: url("../image/主页-背景.jpg");
+    /* 背景图垂直、水平均居中 */
+    background-position: center center;
+    /* 背景图不平铺 */
+    background-repeat: no-repeat;
+    /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+    background-attachment: fixed;  /*此条属性必须设置否则可能无效*/
+    /* 让背景图基于容器大小伸缩 */
+   background-size: cover;
+   /* 设置背景颜色，背景图加载过程中会显示背景色 */
+   background-color: #CCCCCC;
+}
+
 .jumbotron{
     /*加载背景图*/
-    background-image: url("../image/主页-巨幕背景.jpg");
+    background-image: url("../image/主页-巨幕背景2.jpg");
     /* 背景图垂直、水平均居中 */
     background-position: center center;
     /* 背景图不平铺 */
@@ -12,4 +27,15 @@
    /* 设置背景颜色，背景图加载过程中会显示背景色 */
    background-color: #CCCCCC;
    box-shadow: 0 0 30px rgb(0, 0, 0);
+
+   
+}
+
+.jumbotron-title{
+    color: blanchedalmond;
+}
+
+.jumbotron-text{
+    color: dimgray;
+    font-weight: bold;
 }
